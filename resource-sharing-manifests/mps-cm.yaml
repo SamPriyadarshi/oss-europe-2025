@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mps-config
+data:
+  t4-timeslice-x4: |-
+    version: v1
+    sharing:
+      mps:
+        resources:
+        - name: nvidia.com/gpu
+          replicas: 4
+
