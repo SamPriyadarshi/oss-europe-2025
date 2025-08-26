@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: mps-config
 data:
-  t4-timeslice-x4: |-
+  t4-mps-x4: |-
     version: v1
     sharing:
       mps:

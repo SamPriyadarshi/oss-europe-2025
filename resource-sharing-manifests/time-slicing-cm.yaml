@@ -1,9 +1,7 @@
-# time-slicing-config.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: time-slicing-config
-  namespace: gpu-operator # Or the namespace where your device plugin runs
 data:
   # Profile 1: Splits a T4 GPU into 4 virtual slices
   t4-timeslice-x4: |-
@@ -22,3 +20,5 @@ data:
         resources:
         - name: nvidia.com/gpu
           replicas: 10
+
+
